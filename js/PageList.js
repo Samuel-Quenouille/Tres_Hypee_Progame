@@ -27,7 +27,14 @@ const PageList = (argument = '') => {
         });
     };
 
-    fetchList(`https://api.rawg.io/api/games?key=161da1f05e84443d8906064640d95e04`, cleanedArgument);
+    const today = new Date();
+    const nextMonth = new Date(today);
+    nextMonth.setMonth(nextMonth.getMonth() + 1);
+
+    const formattedToday = today.toISOString().split('T')[0];
+    const formattedNextMonth = nextMonth.toISOString().split('T')[0];
+
+    fetchList(`https://api.rawg.io/api/games?key=161da1f05e84443d8906064640d95e04&dates=${formattedToday},${formattedNextMonth}&ordering=released&page_size=9`);
   };
 
   const render = () => {
