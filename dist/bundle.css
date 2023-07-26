@@ -1,0 +1,20 @@
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/style/style.scss ***!
+  \*************************************************************************************************************************************************************************************/
+
+
+.page-list .articles {
+  max-width: 100%;
+  margin-left: 30px;
+  margin-top: 90px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.page-detail {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
